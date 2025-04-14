@@ -14,7 +14,7 @@ import BreakingNews from "../components/BreakingNews";
 
 export default function HomeScreen() {
   const { colorScheme, toggleColorScheme } = useColorScheme();
-  
+
   // Breaking News
   const { data, isLoading: isBreakingLoading } = useQuery({
     queryKey: ["breakingNewss"],
@@ -58,7 +58,7 @@ export default function HomeScreen() {
             ) : (
               <NewsSection
                 label="Recommendation"
-                newsProps={recommendedNew.articles}
+                newsProps={recommendedNew?.articles || []}
               />
             )}
           </ScrollView>

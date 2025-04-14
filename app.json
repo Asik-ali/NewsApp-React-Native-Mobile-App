@@ -17,12 +17,20 @@
     "ios": {
       "supportsTablet": true
     },
+    "plugins": [
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3121432182108183~1197782582"        }
+      ]
+    ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
+    
     "web": {
       "favicon": "./assets/favicon.png"
     }
